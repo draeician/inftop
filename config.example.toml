@@ -1,0 +1,20 @@
+# inftop configuration (TOML)
+# Precedence: CLI flag > env (INFTOP_STRATA_URL, INFTOP_REMOTE, INFTOP_TZ,
+# STRATA_API_KEY) > this file > built-in defaults.
+#
+# Copy to $XDG_CONFIG_HOME/inftop/config.toml (or ~/.config/inftop/config.toml)
+# or run: inftop --init-config
+
+# strata_url = "http://127.0.0.1:8080"
+# remote_host = "gpu-box"
+# tz = "UTC"                    # omit or "local" for system local timezone
+# interval = 1.0                # refresh seconds (-d)
+# history_window = 120          # sparkline samples
+# ollama_url = "http://127.0.0.1:11434"
+# container_name = "strata"
+# api_key_file = "~/.config/inftop/api_key"  # must be chmod 600 (or stricter)
+
+# [alerts]
+# temp_c = 90
+# vram_pct = 95
+# stall_s = 30

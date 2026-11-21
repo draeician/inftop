@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inftop"
+version = "0.2.0"
+description = "Top-like terminal monitor for Strata inference + AMD GPU"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "inftop contributors" }]
+urls = { Homepage = "https://github.com/draeician/inftop" }
+
+[project.scripts]
+inftop = "inftop.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["inftop*"]
